@@ -97,6 +97,7 @@ footer{
     top: 8%;
     box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.5),
                       2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.8s;
 }
 
 .component-boxnavigation ul li{
@@ -288,9 +289,7 @@ p{
     p{
         font-size: 10px;
     }
-    .component-boxnavigation{
-        display: block;
-    }
+
     .b-boxnavigation{
         display: block;
     }

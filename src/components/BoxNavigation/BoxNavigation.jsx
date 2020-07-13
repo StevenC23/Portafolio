@@ -1,13 +1,29 @@
-import React from 'react'
+import React, {useState}from 'react'
 import {NavLink} from "react-router-dom"
 
 const BoxNavigation = () => {
+
+    const [navView, setnavView] = useState(false);
+
+    const navViewer = (prop) => {
+        if(prop === false){
+            document.getElementById("component-boxnavigation").style.display="block"
+            setnavView(!prop)
+        }else{
+            document.getElementById("component-boxnavigation").style.display="none"
+            setnavView(!prop)
+        }  
+    }
+
     return ( 
         <>
-            <div className="component-boxnavigation">
+            <div className="component-boxnavigation" id="component-boxnavigation">
                 <div className="links-boxnavigation">
                     <ul>
-                        <li>
+                        <li onClick={()=>{
+                            document.getElementById("component-boxnavigation").style.display="none"
+                            setnavView(false)
+                            }}>
                             <NavLink
                                 exact
                                 to="/about"
@@ -16,7 +32,10 @@ const BoxNavigation = () => {
                                 >Sobre mi
                             </NavLink>
                         </li>
-                        <li>
+                        <li onClick={()=>{
+                            document.getElementById("component-boxnavigation").style.display="none"
+                            setnavView(false)
+                            }}>
                             <NavLink
                                 exact
                                 to="/hv"
@@ -25,7 +44,10 @@ const BoxNavigation = () => {
                                 >Ámbito Laboral
                             </NavLink>
                         </li>
-                        <li>
+                        <li onClick={()=>{
+                            document.getElementById("component-boxnavigation").style.display="none"
+                            setnavView(false)
+                            }}>
                             <NavLink
                                 exact
                                 to="/works"
@@ -38,7 +60,9 @@ const BoxNavigation = () => {
                 </div>
             </div>
             <div className="b-boxnavigation">
-                <h1 className="boton-boxnavigation">Conocer más</h1>
+                <h1 className="boton-boxnavigation" onClick={()=>{
+                    navViewer(navView);
+                }}>Conocer más</h1>
             </div>
         </>
      );
