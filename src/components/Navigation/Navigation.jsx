@@ -6,6 +6,7 @@ const Navigation = () => {
 
         
         <div className="Component-navigation">
+                
                 <NavLink
                     exact
                     to="/"
@@ -13,6 +14,7 @@ const Navigation = () => {
                     activeClassName="active-home"
                     >Steven
                 </NavLink>
+                <div className="navigation-links">
                 <ul>
                     <li>
                         <NavLink
@@ -42,6 +44,7 @@ const Navigation = () => {
                         </NavLink>
                     </li>
                 </ul>
+                </div>
         </div>
         
      );

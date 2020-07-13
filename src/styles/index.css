@@ -57,6 +57,10 @@ footer{
     line-height: 40px;
 }
 
+.Component-navigation ul{
+    display:flex;
+}
+
 .logo{
     color: #909497;
     font-size: 20px ;
@@ -66,10 +70,6 @@ footer{
 }
 .logo:hover{
     color: white;
-}
-
-ul {
-    display:flex;
 }
 
 .link{
@@ -86,13 +86,51 @@ ul {
     
 }
 
+/*Box navigation*/
+.component-boxnavigation{
 
+    position: absolute;
+    display: flex;
+    display: none;
+    background-color: #212F3C;
+    left: 61%;
+    top: 8%;
+    box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.5),
+                      2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.component-boxnavigation ul li{
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.link-boxnavigation{
+    color:white;
+    transition: 0.8s;
+}
+
+.b-boxnavigation{
+    display: none;
+    position: absolute;
+    left: 61%;
+    top: 3%;
+}
+.boton-boxnavigation{
+    font-size: 20px;
+    transition: 0.8s;
+    color: #909497;
+}
+.boton-boxnavigation:hover{
+    color: white;
+}
 
 
 /*---HOME---*/
 .Component-home{
     padding: 60px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .Steven{
     color:white;
@@ -137,7 +175,7 @@ p{
 
 .Component-about{
     padding: 60px;
-    margin-top: 40px;
+    margin-top: 30px;
     opacity: 0;
     animation-name: opacity;
     animation-duration: 2s;
@@ -155,7 +193,7 @@ p{
 
 .component-hv{
     padding: 60px;
-    margin-top: 40px;
+    margin-top: 30px;
     animation-name: opacity;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -169,7 +207,7 @@ p{
 
 .component-works{
     padding: 60px;
-    margin-top: 40px;
+    margin-top: 30px;
     animation-name: opacity;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -218,9 +256,13 @@ p{
 @media (max-width:650px ){
 
     /*Navigation*/
-    ul li {
+
+    .navigation-links{
         display: none;
     }
+    /* ul li {
+        display: none;
+    } */
 
     .logo{
         left:  15px;
@@ -245,5 +287,11 @@ p{
     }
     p{
         font-size: 10px;
+    }
+    .component-boxnavigation{
+        display: block;
+    }
+    .b-boxnavigation{
+        display: block;
     }
 }

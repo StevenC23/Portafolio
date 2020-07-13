@@ -5,6 +5,8 @@ import {BrowserRouter as Router,Switch,Route} from "react-router-dom"
 //Components
 import Navigation from "./components/Navigation/index"
 import Footer from "./components/Footer/index"
+import BoxNavigation from "./components/BoxNavigation/index"
+
 
 //Utils
 import {ROUTES} from "./utils/enum/index.js"
@@ -32,6 +34,7 @@ function App() {
         <footer>
           <Footer/>
         </footer>
+      <BoxNavigation/>
       </Router> 
     </div>
     
