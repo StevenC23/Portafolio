@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: "PT Sans",sans-serif;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+body{
+    background-color: #17202A;
+}
+
+
+/*Footer*/
+footer{
+    background-color: #212F3C;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    
+
+}
+.contacto{
+    color: #909497;
+    font-size: 13px ;
+    position: relative;
+    left:  50px;
+    line-height: 30px;
+}
+.link-footer{
+    position: absolute;
+    top: 0px;
+    right: 55px;
+    color: #909497;
+    font-size: 15px ;
+    transition: 0.8s;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: opacity;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;  
+}
+.link-footer:hover{
+    color: white;
+}
+
+
+/* NAVIGATION*/
+.Component-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212F3C;
+    padding: 10px;
+    line-height: 40px;
+}
+
+.logo{
+    color: #909497;
+    font-size: 20px ;
+    transition: 0.8s;
+    position: relative;
+    left:  50px;
+}
+.logo:hover{
+    color: white;
+}
+
+ul {
+    display:flex;
+}
+
+.link{
+    color:#909497;
+    transition: 0.8s;
+    padding: 10px;
+}
+.link:hover{
+    color: white;
+}
+
+.active-link{
+    color:white;
+    
+}
+
+
+
+
+/*---HOME---*/
+.Component-home{
+    padding: 60px;
+    margin-top: 40px;
+}
+.Steven{
+    color:white;
+    font-size: 50px;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+.profesion{
+    color:blue;
+    font-size: 50px;
+    animation-duration: 1s;
+    animation-name: slidein ;
+    
+}
+
+
+.universidad {
+    font-size: 15px;
+    color: #909497;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: opacity;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+p{
+    color: #909497;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-size: 10px;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: opacity;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+/*About*/
+
+.Component-about{
+    padding: 60px;
+    margin-top: 40px;
+    opacity: 0;
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+.titulo-about{
+    color: white;
+}
+
+
+/*Hv*/
+
+
+.component-hv{
+    padding: 60px;
+    margin-top: 40px;
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.titulo-hv{
+    color:white;
+}
+
+/*Works*/
+
+.component-works{
+    padding: 60px;
+    margin-top: 40px;
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.titulo-works{
+    color:white;
+}
+
+/*Como lo hice*/
+
+.Component-comolohice{
+    padding: 60px;
+    margin-top: 40px;
+}
+
+.titulo-comolohice{
+    color: white;
+}
+
+
+/*------------keyFrame------------*/
+
+
+@keyframes opacity{
+    0%{
+        opacity:0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slidein{
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/*------------@Media------------*/
+@media (max-width:650px ){
+
+    /*Navigation*/
+    ul li {
+        display: none;
+    }
+
+    .logo{
+        left:  15px;
+    }
+    /*Home*/
+
+    .Component-home{
+        padding: 30px;
+        margin-top: 20px;
+    }
+    
+    .Steven{
+        font-size: 30px;
+
+    }
+    .profesion{
+        font-size: 30px;
+
+    }
+    .universidad {
+        font-size: 15px;
+    }
+    p{
+        font-size: 10px;
+    }
+}
