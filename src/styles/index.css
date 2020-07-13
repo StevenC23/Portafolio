@@ -132,6 +132,18 @@ footer{
 .Component-home{
     padding: 60px;
     margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    width: 500px;
+    height: 400px;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: opacity;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 .Steven{
     color:white;
@@ -258,6 +270,58 @@ p{
 
     /*Navigation*/
 
+    /* .navigation-links{
+        display: none;
+    } */
+
+    /* .logo{
+        left:  15px;
+    } */
+    /*Home*/
+
+    /* .Component-home{
+        padding: 30px;
+        margin-top: 20px;
+    }
+    
+    .Steven{
+        font-size: 30px;
+
+    }
+    .profesion{
+        font-size: 30px;
+
+    }
+    .universidad {
+        font-size: 15px;
+    }
+    p{
+        font-size: 10px;
+    }
+
+    .b-boxnavigation{
+        display: block;
+    } */
+}
+
+@media screen and (max-width: 1160px) {
+    .navigation-links{
+        display: none;
+    }
+    .Component-home{
+        padding: 30px;
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+    }
+    img{
+        width: 350px;
+        height: 250px;
+        margin-top: 30px;
+    }
+
+    /*media*/
+
     .navigation-links{
         display: none;
     }
@@ -293,4 +357,5 @@ p{
     .b-boxnavigation{
         display: block;
     }
-}
+
+  }
