@@ -7,14 +7,36 @@
     /* overflow-y: hidden; */
 }
 
+
+/*fondo*/
+
 body{
-    background-color: #17202A;
+    background-image: url(fondo1.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
+
+/*cuando quiera colocarle algo encima*/
+/* body:before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: #17202A;
+    opacity : 0.8;
+
+} */
 
 
 /*Footer*/
 footer{
-    background-color: #212F3C;
+    background-color: #01064d;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -52,7 +74,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #212F3C;
+    background-color: #01064d;
     padding: 10px;
     line-height: 40px;
 }
@@ -144,6 +166,7 @@ footer{
     font-size: 20px ;
     transition: 0.8s;
     position: relative;
+    cursor: pointer;
 }
 .boton-boxnavigation:hover{
     color: white;
@@ -152,7 +175,7 @@ footer{
 .links-boxnavigation ul{
     display:block;
     position: absolute;
-    background-color: #212F3C;
+    background-color: #01064d;
     padding: 10px;
     right: 5%;
     top: 48px;

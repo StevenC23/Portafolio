@@ -11,6 +11,7 @@ import BoxNavigation from "./components/BoxNavigation/index"
 //Utils
 import {ROUTES} from "./utils/enum/index.js"
 import "./styles/index.css"
+// import fondo from "./utils/img/pngwave.png"
 
 
 
@@ -19,6 +20,8 @@ function App() {
 
       <Router>
         <div className="Container">
+          {/* <img src={fondo} alt="fondo"></img> */}
+        <div className="background-div-pages">
           <Navigation/>
           <Switch>
             {ROUTES.map((route)=>(
@@ -30,13 +33,13 @@ function App() {
               />
             ))}
           </Switch>
+          </div>
         </div>
         <BoxNavigation/>
         <footer>
           <Footer/>
         </footer>
       </Router> 
-    
   );
 }
 
