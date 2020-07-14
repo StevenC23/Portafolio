@@ -67,15 +67,21 @@ footer{
     transition: 0.8s;
     position: relative;
     left:  50px;
+    padding: 0px 30px;
 }
 .logo:hover{
     color: white;
 }
 
+
+.navigation-links{
+    position: relative;
+}
+
 .link{
     color:#909497;
     transition: 0.8s;
-    padding: 10px;
+    padding: 10px 30px;
 }
 .link:hover{
     color: white;
@@ -86,8 +92,10 @@ footer{
     
 }
 
-/*Box navigation*/
-.component-boxnavigation{
+/* Box navigation*/
+
+
+/* .component-boxnavigation{
 
     position: absolute;
     display: flex;
@@ -126,10 +134,48 @@ footer{
 }
 .boton-boxnavigation:hover{
     color: white;
+} */
+
+
+.boton-boxnavigation{
+    display: none;
+    padding: 0px 30px;
+    color: #909497;
+    font-size: 20px ;
+    transition: 0.8s;
+    position: relative;
+}
+.boton-boxnavigation:hover{
+    color: white;
+}
+
+.links-boxnavigation ul{
+    display:block;
+    position: absolute;
+    background-color: #212F3C;
+    padding: 10px;
+    right: 5%;
+    top: 48px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.8);
+}
+
+.links-boxnavigation ul li {
+    padding: 20px 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.link-boxnavigation{
+    color: #909497;
+    transition: 0.8s;
+}
+.link-boxnavigation:hover{
+    color: white;
 }
 
 
-/*---HOME---*/
+
+/*------------------------HOME------------------------*/
 .Component-home{
     padding: 60px;
     margin-top: 30px;
@@ -185,9 +231,10 @@ p{
 
 }
 
-/*About*/
+/*------------------------About------------------------*/
 
 .Component-about{
+    display: flex;
     padding: 60px;
     margin-top: 30px;
     opacity: 0;
@@ -202,10 +249,11 @@ p{
 }
 
 
-/*Hv*/
+/*------------------------Hv------------------------*/
 
 
 .component-hv{
+    display: flex;
     padding: 60px;
     margin-top: 30px;
     animation-name: opacity;
@@ -217,9 +265,10 @@ p{
     color:white;
 }
 
-/*Works*/
+/*------------------------Works------------------------*/
 
 .component-works{
+    display: flex;
     padding: 60px;
     margin-top: 30px;
     animation-name: opacity;
@@ -231,9 +280,10 @@ p{
     color:white;
 }
 
-/*Como lo hice*/
+/*------------------------Como lo hice------------------------*/
 
 .Component-comolohice{
+    display: flex;
     padding: 60px;
     margin-top: 40px;
 }
@@ -243,7 +293,7 @@ p{
 }
 
 
-/*------------keyFrame------------*/
+/*------------------------keyFrame------------------------*/
 
 
 @keyframes opacity{
@@ -266,7 +316,7 @@ p{
     }
 }
 
-/*------------@Media------------*/
+/*------------------------@Media------------------------*/
 
 @media screen and (max-width: 1160px) {
     .navigation-links{
@@ -285,18 +335,10 @@ p{
         margin-left: -10px;
     }
 
-    /*media*/
-
-    .navigation-links{
-        display: none;
-    }
-    /* ul li {
-        display: none;
-    } */
-
     .logo{
         left:  15px;
     }
+
     /*Home*/
 
     .Component-home{
@@ -319,8 +361,13 @@ p{
         font-size: 10px;
     }
 
-    .b-boxnavigation{
+
+    /*Box navigation*/
+    .boton-boxnavigation{
         display: block;
     }
+    /* .links-boxnavigation ul{
+        display: block;
+    } */
 
   }

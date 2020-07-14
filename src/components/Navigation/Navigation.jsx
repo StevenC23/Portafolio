@@ -1,21 +1,35 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {NavLink} from "react-router-dom"
+// import BoxNavigation from "../BoxNavigation/index"
+
 
 const Navigation = () => {
-    return ( 
 
-        
+    const [navView, setnavView] = useState(false);
+
+    const navViewer = (prop) => {
+        if(prop === false){
+            document.getElementById("links-boxnavigation").style.display="block"
+            setnavView(!prop)
+        }else{
+            document.getElementById("links-boxnavigation").style.display="none"
+            setnavView(!prop)
+        }  
+    }
+
+    return ( 
         <div className="Component-navigation">
                 
                 <NavLink
                     exact
                     to="/"
                     className="logo"
+                    id="logo"
                     activeClassName="active-home"
                     >Steven
                 </NavLink>
                 <div className="navigation-links">
-                <ul>
+                    <ul>
                     <li>
                         <NavLink
                             exact
@@ -43,8 +57,11 @@ const Navigation = () => {
                             >Portafolio
                         </NavLink>
                     </li>
-                </ul>
+                    </ul>
                 </div>
+                <div className="boton-boxnavigation"
+                     onClick={()=>{navViewer(navView)}}
+                >Box</div>
         </div>
         
      );

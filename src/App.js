@@ -31,10 +31,10 @@ function App() {
             ))}
           </Switch>
         </div>
+        <BoxNavigation/>
         <footer>
           <Footer/>
         </footer>
-      <BoxNavigation/>
       </Router> 
     
   );
