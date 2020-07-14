@@ -6,7 +6,6 @@ const Comolohice = () => {
         <h1 className="titulo-comolohice">
             Como hice mi portafolio :D
         </h1>
-        <h1>Hola popo</h1>
     </div>
      );
 }

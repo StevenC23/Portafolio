@@ -16,7 +16,7 @@ import "./styles/index.css"
 
 function App() {
   return (
-    <div className="principal">
+
       <Router>
         <div className="Container">
           <Navigation/>
@@ -36,7 +36,6 @@ function App() {
         </footer>
       <BoxNavigation/>
       </Router> 
-    </div>
     
   );
 }

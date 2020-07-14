@@ -106,11 +106,12 @@ footer{
     padding: 10px;
 }
 
-
 .link-boxnavigation{
     color:white;
     transition: 0.8s;
 }
+
+
 
 .b-boxnavigation{
     display: none;
@@ -133,7 +134,7 @@ footer{
     padding: 60px;
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 img{
