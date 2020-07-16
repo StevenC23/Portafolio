@@ -4,9 +4,8 @@ import {NavLink} from "react-router-dom"
 const BoxNavigation = () => {
 
     return ( 
-        <div>
-            <div className="links-boxnavigation" id="links-boxnavigation">
-                <ul>
+
+                <ul className="links-boxnavigation" id="links-boxnavigation">
                     <li onClick={()=>{}}>
                         <NavLink
                             exact
@@ -35,8 +34,6 @@ const BoxNavigation = () => {
                         </NavLink>
                     </li>
                 </ul>
-            </div>
-        </div>
      );
 }
  
